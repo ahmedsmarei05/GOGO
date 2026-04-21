@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GOGO | Checkout (COD)</title>
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/checkout.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-row">
+        <a class="brand" href="./home.html">GOGO</a>
+        <nav class="nav-links">
+          <a href="./home.html">Home</a>
+          <a href="./collection.html">Collection</a>
+         
+          <span id="authArea"></span>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <h1 class="page-title">Checkout</h1>
+      <p class="muted">Cash on delivery only — pay when you receive your order.</p>
+      <div class="grid checkout-layout">
+        <section class="card checkout-form">
+          <h2>Delivery details</h2>
+          <form id="codForm" novalidate>
+            <div class="form-group">
+              <label for="fullName">Full name</label>
+              <input id="fullName" name="fullName" type="text" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="tel" placeholder="e.g. 01xxxxxxxxx" required />
+            </div>
+            <div class="form-group">
+              <label for="address">Delivery address</label>
+              <textarea id="address" name="address" rows="3" required></textarea>
+            </div>
+            <div class="form-group">
+              <label for="notes">Delivery notes (optional)</label>
+              <textarea id="notes" name="notes" rows="2" placeholder="Building, floor, landmark…"></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Place order (COD)</button>
+            <p id="codError" class="error"></p>
+            <p id="codSuccess" class="success"></p>
+          </form>
+        </section>
+
+        <aside class="card order-review">
+          <h2>Order review</h2>
+          <div id="orderReview"></div>
+        </aside>
+      </div>
+    </main>
+
+    <script src="../js/common.js"></script>
+    <script src="../js/products.js"></script>
+    <script src="../js/checkout.js"></script>
+  </body>
+</html>
