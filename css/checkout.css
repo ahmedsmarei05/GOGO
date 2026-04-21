@@ -1,0 +1,15 @@
+.checkout-layout {
+  margin: 20px 0;
+  grid-template-columns: 1.4fr 1fr;
+}
+
+.checkout-form,
+.order-review {
+  padding: 18px;
+}
+
+@media (max-width: 900px) {
+  .checkout-layout {
+    grid-template-columns: 1fr;
+  }
+}
