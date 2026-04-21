@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GOGO | Admin Dashboard</title>
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/admin.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-row">
+        <a class="brand" href="./home.html">GOGO</a>
+        <nav class="nav-links">
+          <a href="./home.html">Home</a>
+          <a href="./collection.html">Collection</a>
+          <span id="authArea"></span>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <h1 class="page-title">Admin dashboard</h1>
+      <p class="muted">View users, manage catalog, and track COD orders.</p>
+
+      <div class="grid admin-grid">
+        <section class="card admin-panel">
+          <h2>Overview</h2>
+          <p>Customer accounts: <strong id="totalUsers">0</strong></p>
+          <p>Orders: <strong id="totalOrders">0</strong></p>
+          <p>Products listed: <strong id="totalProducts">0</strong></p>
+        </section>
+
+        <section class="card admin-panel">
+          <h2>Add product</h2>
+          <form id="addProductForm" novalidate>
+            <div class="form-group">
+              <label for="pName">Name</label>
+              <input id="pName" name="pName" type="text" required />
+            </div>
+            <div class="form-group">
+              <label for="pCategory">Category</label>
+              <input id="pCategory" name="pCategory" type="text" required />
+            </div>
+            <div class="form-group">
+              <label for="pPrice">Price</label>
+              <input id="pPrice" name="pPrice" type="number" min="0" step="0.01" required />
+            </div>
+            <div class="form-group">
+              <label for="pImage">Image path</label>
+              <input id="pImage" name="pImage" type="text" placeholder="../assets/images/products/your-file.jpg" required />
+            </div>
+            <div class="form-group">
+              <label for="pDescription">Description</label>
+              <textarea id="pDescription" name="pDescription" rows="2" required></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Add to catalog</button>
+            <p id="addProductError" class="error"></p>
+            <p id="addProductSuccess" class="success"></p>
+          </form>
+        </section>
+      </div>
+
+      <section class="card admin-panel">
+        <h2>Users</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Role</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="usersTableBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <div class="grid admin-grid">
+        <section class="card admin-panel">
+          <h2>Products</h2>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Category</th>
+                  <th>Price</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="productsTableBody"></tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+
+      <section class="card admin-panel">
+        <h2>Orders</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Order ID</th>
+                <th>User</th>
+                <th>Phone</th>
+                <th>Items</th>
+                <th>Payment</th>
+                <th>Status</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+            <tbody id="ordersTableBody"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script src="../js/common.js"></script>
+    <script src="../js/products.js"></script>
+    <script src="../js/admin.js"></script>
+  </body>
+</html>
