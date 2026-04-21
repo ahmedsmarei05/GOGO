@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GOGO | Register</title>
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/auth.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-row">
+        <a class="brand" href="./home.html">GOGO</a>
+        <nav class="nav-links">
+          <a href="./home.html">Home</a>
+          <a href="./collection.html">Collection</a>
+          <span id="authArea"></span>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container auth-wrap">
+      <section class="card auth-card">
+        <h1>Create Account</h1>
+        <form id="registerForm" novalidate>
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input id="name" name="name" type="text" placeholder="Enter your full name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="Enter your Email" required />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" placeholder="Create your password" required />
+          </div>
+          <div class="form-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <input id="confirmPassword" name="confirmPassword" type="password" placeholder="Confirm your password" required />
+          </div>
+          <button class="btn btn-primary" type="submit">Register</button>
+          <p id="registerError" class="error"></p>
+          <p id="registerSuccess" class="success"></p>
+          <div class="link">
+            <p>Already have an account? <a href="login.html">Login</a></p>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script src="../js/common.js"></script>
+    <script src="../js/auth.js"></script>
+  </body>
+</html>
