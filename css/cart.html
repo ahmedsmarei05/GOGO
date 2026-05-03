@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GOGO | Cart</title>
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/cart.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-row">
+        <a class="brand" href="./home.html">GOGO</a>
+        <nav class="nav-links">
+          <a href="./home.html">Home</a>
+          <a href="./collection.html">Collection</a>
+         
+          <span id="authArea"></span>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <h1 class="page-title">Shopping Cart</h1>
+      <div class="grid cart-layout">
+        <section id="cartList" class="card cart-list"></section>
+        <aside class="card summary">
+          <h2>Order Summary</h2>
+          <p>Subtotal: <strong id="subtotal">$0.00</strong></p>
+          <button id="checkoutBtn" class="btn btn-primary">Proceed to Payment</button>
+        </aside>
+      </div>
+    </main>
+
+    <script src="../js/common.js"></script>
+    <script src="../js/products.js"></script>
+    <script src="../js/cart.js"></script>
+  </body>
+</html>

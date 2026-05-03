@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GOGO | Collection</title>
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/collection.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-row">
+        <a class="brand" href="./home.html">GOGO</a>
+        <nav class="nav-links">
+          <a href="./home.html">Home</a>
+          <a class="active" href="./collection.html">Collection</a>
+          
+          <span id="authArea"></span>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <h1 class="page-title">Collection</h1>
+      <p class="muted">Search, filter and add products to cart or wishlist.</p>
+
+      <section class="card toolbar">
+        <div class="grid">
+          <div class="form-group">
+            <label for="searchInput">Search Product</label>
+            <input id="searchInput" type="text" placeholder="Search by name..." />
+          </div>
+          <div class="form-group">
+            <label for="categoryFilter">Category</label>
+            <select id="categoryFilter"></select>
+          </div>
+          <div class="form-group">
+            <label for="minPrice">Min Price</label>
+            <input id="minPrice" type="number" min="0" placeholder="0" />
+          </div>
+          <div class="form-group">
+            <label for="maxPrice">Max Price</label>
+            <input id="maxPrice" type="number" min="0" placeholder="200" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="sortFilter">Sort By</label>
+          <select id="sortFilter">
+            <option value="">Default</option>
+            <option value="priceAsc">Price: Low to High</option>
+            <option value="priceDesc">Price: High to Low</option>
+            <option value="nameAsc">Name: A-Z</option>
+          </select>
+        </div>
+      </section>
+
+      <section id="productsGrid" class="grid products-grid"></section>
+    </main>
+
+    <script src="../js/common.js"></script>
+    <script src="../js/products.js"></script>
+    <script src="../js/collection.js"></script>
+  </body>
+</html>
