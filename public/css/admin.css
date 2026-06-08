@@ -1,0 +1,85 @@
+.admin-grid {
+  margin: 20px 0;
+  grid-template-columns: 1fr 1fr;
+}
+
+.admin-panel {
+  padding: 16px;
+}
+
+.table-wrap {
+  overflow: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  padding: 10px;
+  white-space: nowrap;
+}
+
+.order-items-cell {
+  white-space: normal;
+  max-width: 280px;
+  line-height: 1.45;
+  font-size: 0.9rem;
+}
+
+th {
+  background: #fff2f8;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(47, 36, 48, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  padding: 20px;
+}
+
+.modal-overlay[hidden] {
+  display: none;
+}
+
+.modal-card {
+  padding: 20px;
+  width: min(420px, 100%);
+}
+
+.modal-card-wide {
+  width: min(520px, 100%);
+}
+
+.order-address-cell {
+  white-space: normal;
+  max-width: 220px;
+  line-height: 1.4;
+  font-size: 0.9rem;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.admin-table-actions {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 900px) {
+  .admin-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,37 @@
+.auth-wrap {
+  display: grid;
+  place-items: center;
+  min-height: calc(100vh - 160px);
+}
+
+.auth-card {
+  width: min(480px, 100%);
+  padding: 22px;
+}
+
+.auth-card h1 {
+  margin-top: 0;
+}
+
+.auth-switch {
+  margin: 14px 0 8px;
+  font-size: 0.95rem;
+}
+
+.auth-switch a {
+  text-decoration: underline;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.auth-switch a:hover {
+  color: var(--primary-dark);
+}
+
+.link a {
+  text-decoration: underline;
+}
+
+.link a:hover {
+  color: darkorchid;
+}
