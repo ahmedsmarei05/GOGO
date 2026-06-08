@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GOGO | Home</title>
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/home.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-row">
+        <a class="brand" href="/">GOGO</a>
+        <nav class="nav-links">
+          <a class="active" href="/">Home</a>
+          <a href="/collection">Collection</a>
+          
+          <span id="authArea"></span>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero-slideshow card" aria-label="Featured looks">
+        <div class="slides" id="heroSlides">
+          <article class="slide is-active" data-index="0">
+            <img src="/assets/images/b2.jpeg" alt="Spring collection mood" />
+            <div class="slide-caption">
+              <h1>New season softness</h1>
+              <p>Light layers and pastel tones for everyday elegance.</p>
+              <a class="btn btn-primary" href="/collection">Shop now</a>
+            </div>
+          </article>
+          <article class="slide" data-index="1">
+            <img src="/assets/images/b1.jpeg" alt="Dresses and skirts" />
+            <div class="slide-caption">
+              <h1>Dresses you will love</h1>
+              <p>Feminine silhouettes made to move with you.</p>
+              <a class="btn btn-primary" href="/collection">View dresses</a>
+            </div>
+          </article>
+          <article class="slide" data-index="2">
+            <img src="/assets/images/ss2.jpeg" alt="Accessories detail" />
+            <div class="slide-caption">
+              <h1>Details that shine</h1>
+              <p>Finish every outfit with GOGO pieces.</p>
+              <a class="btn btn-primary" href="/collection">Explore</a>
+            </div>
+          </article>
+        </div>
+        <button type="button" class="slide-nav slide-prev" id="slidePrev" aria-label="Previous slide">‹</button>
+        <button type="button" class="slide-nav slide-next" id="slideNext" aria-label="Next slide">›</button>
+        <div class="slide-dots" id="slideDots" role="tablist" aria-label="Slides"></div>
+      </section>
+
+      <section>
+        <h2 class="page-title">Quick overview</h2>
+        <div class="grid quick-stats">
+          <article class="card">
+            <strong id="productsCount">0</strong>
+            <span class="muted">Products in store</span>
+          </article>
+          <article class="card">
+            <strong id="wishlistCount">0</strong>
+            <span class="muted">Your wishlist items</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="home-featured">
+        <h2 class="page-title">Featured picks</h2>
+        <p class="muted">A curated selection from our collection. Tap a card for sizes and details.</p>
+        <div id="featuredGrid" class="grid featured-grid"></div>
+      </section>
+
+      <section class="about-us card">
+        <h2 class="page-title about-heading">About GOGO</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              GOGO is a feminine clothing brand built around soft colors, thoughtful fabrics, and pieces
+              you can wear from morning coffee to evening plans. We focus on comfort, fit, and small details
+              that make everyday dressing feel special.
+            </p>
+            <p>
+              Our team believes fashion should be simple to shop and easy to love. That is why we keep
+              collections curated, sizing straightforward, and checkout clear—including cash on delivery for
+              peace of mind.
+            </p>
+            <a class="btn btn-secondary" href="/collection">Browse the collection</a>
+          </div>
+          <div class="about-visual" aria-hidden="true">
+            <div class="about-accent"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">GOGO - Female Clothing Brand</div>
+    </footer>
+    <script src="/js/common.js"></script>
+    <script src="/js/home.js"></script>
+  </body>
+</html>

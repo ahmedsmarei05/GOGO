@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GOGO | Login</title>
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/auth.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-row">
+        <a class="brand" href="/">GOGO</a>
+        <nav class="nav-links">
+          <a href="/">Home</a>
+          <a href="/collection">Collection</a>
+          <span id="authArea"></span>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container auth-wrap">
+      <section class="card auth-card">
+        <h1>Login</h1>
+        <form id="loginForm" novalidate>
+          <div class="form-group">
+            <label for="email"></label>
+            <input id="email" name="email" type="email" placeholder="Email" required />
+            <p id="emailError" class="error field-error"></p>
+          </div>
+          <div class="form-group">
+            <label for="password"></label>
+            <input id="password" name="password" type="password" placeholder="Password" required />
+            <p id="passwordError" class="error field-error"></p>
+          </div>
+          <button class="btn btn-primary" type="submit">Login</button>
+        </form>
+        <p class="auth-switch muted">Don't have an account? <a href="/register">Register</a></p>
+        <p class="muted">Demo admin: admin@gogo.com / Admin123!</p>
+      </section>
+    </main>
+
+    <script src="/js/common.js"></script>
+    <script src="/js/auth.js"></script>
+  </body>
+</html>

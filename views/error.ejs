@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GOGO | Error</title>
+    <link rel="stylesheet" href="/css/base.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-row">
+        <a class="brand" href="/">GOGO</a>
+        <nav class="nav-links">
+          <a href="/">Home</a>
+          <a href="/collection">Collection</a>
+          <span id="authArea"></span>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container auth-wrap">
+      <section class="card auth-card">
+        <h1><%= statusCode || 'Error' %></h1>
+        <p class="error"><%= message %></p>
+        <a class="btn btn-primary" href="/">Back to home</a>
+      </section>
+    </main>
+
+    <script src="/js/common.js"></script>
+  </body>
+</html>
